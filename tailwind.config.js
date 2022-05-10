@@ -2,7 +2,7 @@ module.exports = {
   content: ["./public/index.html", "./src/**/*.{html,js}", "./public/app.js"],
   theme: {
     screens: {
-      sm: "375px",
+      sm: "460px",
       md: "768px",
       lg: "1024px",
       xl: "1280px",

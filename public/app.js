@@ -19,3 +19,12 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+const btn = document.getElementById("showmobile");
+const nav = document.getElementById("menu");
+
+btn.addEventListener("click", () => {
+  btn.classList.toggle("open");
+  nav.classList.toggle("flex");
+  nav.classList.toggle("hidden");
+});

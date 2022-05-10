@@ -6,65 +6,79 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-white font-body">
-    <section class="hero
-    mb-32">
-      <header class=" flex justify-between py-10 px-8">
-        <div cl>
-          <img src="images/logo.svg" alt="company logo" class=" w-4/5"/>
+    <section class="hero mb-32 sm:flex sm:flex-col sm:justify-center">
+      <header class=" flex justify-between pt-10 pb-2 px-8  lg:px-28 lg;items-center ">
+        <div class="">
+          <img src="images/logo.svg" alt="company logo" class=" w-full lg:w-full " />
+        </div>
+        <div class="desktop-menu hidden sm:hidden md:hidden lg:block">
+          <nav >
+       <ul class="flex flex-row justify-between items-center space-x-10 text-veryDarkBlue font-body ">
+         <li class="nav-link"><a href="#Pricing" class="hover:text-brightRed">Pricing</a></li>
+         <li class="nav-link"><a href="#Product" class="hover:text-brightRed">Product</a></li>
+         <li class="nav-link"><a href="#About" class="hover:text-brightRed"> About Us</a></li>
+         <li class="nav-link"><a href="#Careers" class="hover:text-brightRed">Careers</a></li>
+         <li class="nav-link"><a href="#Community" class="hover:text-brightRed">Community</a></li>
+       </ul>
+     </nav>
+
+        </div>
+        <div class="">
+          <button  class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight w-fit hover:text-white hidden md:hidden sm:hidden lg:block 
+          ">Get Started</button>
         </div>
 
-        <div class="hamburger " id="showmobile">
+        <div class="hamburger block lg:hidden" id="showmobile">
           <span class="burger-1"></span>
           <span class="burger-2"></span>
           <span class="burger-3"></span>
         </div>
-        <div class="hidden ">
-          <nav class="w-full bg-red-500 hidden ">
-            <ul class="w-full p-6 font-body font-bold">
-              <li class="nav-link"><a href="#Pricing">Pricing</a></li>
-              <li class="nav-link"><a href="#Product">Product</a></li>
-              <li class="nav-link"><a href="#About"> About Us</a></li>
-              <li class="nav-link"><a href="#Careers">Careers</a></li>
-              <li class="nav-link"><a href="#Community">Community</a></li>
-            </ul>
-          </nav>
-
-        </div>
-
-        
       </header>
-      <div class="container px-2"
+      <div class="">
+        <nav id="menu" class="hidden  
+      ">
+       <ul class="flex flex-col items-center space-y-5 bg-veryLightGray text-center text-veryDarkBlue mt-8 py-10 font-bold w-full mx-6">
+         <li class="nav-link"><a href="#Pricing" class="hover:text-brightRed">Pricing</a></li>
+         <li class="nav-link"><a href="#Product" class="hover:text-brightRed">Product</a></li>
+         <li class="nav-link"><a href="#About" class="hover:text-brightRed"> About Us</a></li>
+         <li class="nav-link"><a href="#Careers" class="hover:text-brightRed">Careers</a></li>
+         <li class="nav-link"><a href="#Community" class="hover:text-brightRed">Community</a></li>
+       </ul>
+     </nav>
+
+      </div>
+      <div class=" px-2 w-full sm:w-full sm:px-10 sm:flex sm:flex-col sm:justify-center sm:items-center md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse lg:space-x-10 lg:px-14"
       >
-        <div class="hero-img">
+        <div class="hero-img w-full sm:w-full sm:mx-auto  lg:w-1/2">
           <img
             src="images/illustration-intro.svg"
-            alt="illustration-intro" class="w-full"
+            alt="illustration-intro" class="w-full sm:w-full lg:w-full"
           />
         </div>
-        <div class=" my-8 px-4 flex flex-col ">
-          <h1 class="font-body text-4xl text-darkBlue   font-bold text-center
-          leading-snug my-3">Bring everyone together to build better products.</h1>
-          <p class="font-body text-base text-center text-darkGrayishBlue font-normal px-2 leading-6">
+        <div class=" my-8 px-2 flex flex-col sm:px-0sm:w-full lg:w-1/2 lg:items-start lg:justify-start">
+          <h1 class="font-body text-4xl text-darkBlue font-bold text-center
+          leading-snug my-3 sm:w-full lg:text-left lg:text-5xl lg:leading-tight">Bring everyone together to build better products.</h1>
+          <p class="font-body text-base text-center text-darkGrayishBlue font-normal px-2 leading-7 sm:pr-0 lg:text-left lg:pr-40 lg:leading-8 ">
             Manage makes it simple for software teams to plan day-to-daytasks
             while keeping the larger team goals in view.
           </p>
-          <button class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight w-3/5	mx-auto mt-5
+          <button class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight w-3/5	mx-auto mt-5 md:w-fit lg:text-left lg:mx-0
           ">Get Started</button>
         </div>
     </section>
 
     <main>
       <section>
-        <div class="flex flex-col">
-        <div class="px-7 flex flex-col">
+        <div class="flex flex-col lg:flex-row lg:px-20 lg:items-start lg:justify-start">
+        <div class="px-7 flex flex-col lg:items-baseline lg:mt-4">
             <h2 class="font-body text-4xl text-darkBlue   font-bold text-center
-            leading-snug my-3">  What’s different about Manage?</h2>
-            <p class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1">Manage provides all the functionality 
+            leading-snug my-3 lg:text-left lg:my-3">  What’s different about Manage?</h2>
+            <p class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1 lg:text-left lg:pr-8">Manage provides all the functionality 
             your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
             </p>
           </div>
           <div>
-          <div class="flex mt-12 flex-col pl-4">
+          <div class="sm:flex mt-12 flex-col pl-4 sm:pr-0 lg:pr-10">
             <div class="flex flex-row rounded-l-full  text-veryDarkBlue bg-veryPaleRed font-body text-base ">
               
                 <span class="px-6 py-2 text-white rounded-full bg-brightRed">01</span>
@@ -106,7 +120,83 @@
 
         </div>
       </section>
-      <section class="my-20 mx-auto">
+
+
+      <section class="my-20 mx-auto hidden sm:hidden lg:block">
+        <div class="px-6 mt-6 mb-16">
+          <h3 class="font-body text-4xl text-darkBlue   font-bold text-center
+          leading-snug my-5 ">
+            What they’ve said
+        </h3>
+        </div>
+        <div class="flex justify-center items-center flex-col mx-auto px-4 lg:flex-row  ">
+          <div class="bg-veryLightGray my-6 pb-4 lg:w-2/6">
+            <div class="mx-auto">
+              <img src="images/avatar-anisha.png" alt="avatar-anisha" class="w-1/5 mx-auto mb-10">
+            </div>
+            <div>
+              <h4 class=" py-2 text-DarkBlue font-body text-xl mx-auto text-center font-bold ">
+                Anisha Li
+              </h4>
+              <p  class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1 mt-2 mb-8 ">“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+              </p>
+            </div>
+          </div>
+          <div class="bg-veryLightGray  my-6 pb-4 lg:w-2/6">
+            <div>
+              <img src="images/avatar-ali.png" alt="avatar-ali" class="w-1/5 mx-auto mb-10">
+            </div>
+            <div>
+              <h4 class=" py-2 text-DarkBlue font-body text-xl mx-auto text-center font-bold ">
+                Ali Bravo
+              </h4>
+              <p class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1 mt-2 mb-8 ">
+                “We have been able to cancel so many other subscriptions since using 
+                Manage. There is no more cross-channel confusion and everyone is much 
+                more focused.”
+              </p>
+            </div>
+          </div>
+          <div class="bg-veryLightGray   my-6 pb-4 lg:w-2/6">
+            <div>
+              <img src="images/avatar-richard.png" alt="avatar-richard" class="w-1/5 mx-auto mb-10">
+            </div>
+            <div>
+              <h4 class=" py-2 text-DarkBlue font-body text-xl mx-auto text-center font-bold ">
+                Richard Watts              
+              </h4>
+              <p class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1 mt-2 mb-8 ">
+                “Manage allows us to provide structure and process. It keeps us organized 
+                and focused. I can’t stop recommending them to everyone I talk to!”
+              </p>
+            </div>
+          </div>
+          <div class="bg-veryLightGray my-6 pb-4 lg:w-2/6">
+            <div>
+              <img src="images/avatar-shanai.png" alt="avatar-shanai" class="w-1/5 mx-auto mb-10">
+            </div>
+            <div>
+              <h4 class=" py-2 text-DarkBlue font-body text-xl mx-auto text-center font-bold ">
+                Shanai Gough              
+              </h4>
+              <p class="  font-body text-base text-center text-darkGrayishBlue font-normal leading-7 px-1 mt-2 mb-8 ">
+                “Their software allows us to track, manage and collaborate on our projects 
+                from anywhere. It keeps the whole team in-sync without being intrusive.”
+              </p>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="mx-auto flex items-center mt-12">
+          <button  class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight	mx-auto w-1/2 hover:text-white md:w-fit
+          ">Get Started</button>
+        </div>
+ 
+      </section>
+
+
+      <section class="my-20 mx-auto block lg:hidden">
         <div class="px-6 mt-6 mb-16">
           <h3 class="font-body text-4xl text-darkBlue   font-bold text-center
           leading-snug my-5 ">
@@ -178,86 +268,92 @@
           <span class="dot" onclick="currentSlide(4)"></span>
         </div>
         <div class="mx-auto flex items-center mt-12">
-          <button  class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight	mx-auto w-1/2 hover:text-white
+          <button  class="primary-cta p-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight	mx-auto w-1/2 hover:text-white md:w-fit
           ">Get Started</button>
         </div>
  
       </section>
       
-      <section class="bg-brightRed py-32">
-        <div class="px-4 mx-auto">
+      <section class="bg-brightRed py-20 lg:py-24 lg:mt-16
+      cta">
+        <div class="px-4 mx-auto lg:flex lg:flex-row lg:justify-center lg:items-center lg:px-16">
           <h2 class="font-body text-5xl text-white   font-bold text-center
-          leading-snug my-5 ">  Simplify how your team works today.</h2>
+          leading-snug my-5  lg:text-left lg:pl-16 lg:w-3/5">  Simplify how your team works today.</h2>
           <div class="mx-auto flex items-center mt-6">
-            <button class="primary-cta p-3 px-6  text-brightRed bg-white rounded-full hover:bg-brightRedLight	mx-auto w-1/2 hover:text-white
+            <button class="primary-cta p-3 px-6  text-brightRed bg-white rounded-full hover:bg-brightRedLight	mx-auto w-1/2 hover:text-white md:w-fit
             ">Get Started</button>
           </div>
 
         </div>
       </section>
-      <footer class="bg-veryDarkBlue py-32">
-        <div class="px-4">
+      <footer class="bg-veryDarkBlue pt-32 pb-8 md:px-10 flex flex-col justify-center lg:flex-row-reverse lg:w-full lg:py-12 lg:justify-between lg:space-x-5 lg:items-start ">
+        <div class="px-3 md:pl-14 lg:w-2/5 lg:my-auto">
           <form action="get" method="get">
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Updates in your inbox…"
-              class=" px-4 py-3 rounded-full focus:outline-none text-sm w-3/4"
+              class=" px-4 py-3 rounded-full focus:outline-none text-sm w-9/12 md:w-4/ 5"
             />
             <input
               type="button"
               value="Go"
-              class="primary-cta py-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight	mx-auto cursor-pointer 
+              class="primary-cta py-3 px-6  text-white bg-brightRed rounded-full hover:bg-brightRedLight	mx-auto cursor-pointer ml-2
           "
             />
           </form>
         </div>
 
-        <div>
-          <div class="about-list">
-            <ul>
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>Pricing</li></a>
-              <a href="#"><li>Products</li></a>
-              <a href="#"><li>About Us</li></a>
+        <div class="flex flex-row justify-around items-start space-x-8 mt-20 lg:justify-between  lg:space-x-14">
+          <div class="about-list ">
+            <ul class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed"><li>Home</li></a>
+
+              <a href="#" class="hover:text-brightRed"><li>Pricing</li></a>
+              
+            <a href="#" class="hover:text-brightRed"><li>Products</li></a>
+              <a href="#"class="hover:text-brightRed"><li>About Us</li></a>
             </ul>
           </div>
           <div class="about-list-2">
-            <ul>
-              <a href="#"><li>Careers</li></a>
-              <a href="#"><li>Community</li></a>
-              <a href="#"><li>Privacy  Policy</li></a>
+            <ul class="flex flex-col space-y-3 text-white">
+              <a href="#" class="hover:text-brightRed"><li>Careers</li></a>
+              <a href="#" class="hover:text-brightRed"><li>Community</li></a>
+              <a href="#" class="hover:text-brightRed"><li>Privacy  Policy</li></a>
             </ul>
           </div>
         </div>
 
-        <div class="footer-column-4">
-          <div>
-            <a href="#">
-              <img src="public/images/icon-facebook.svg" alt="" class="" />
+        <div class="footer-column-4  mt-10 lg:mt-10 space-y-12">
+          <div class="flex justify-center items-center mt-16">
+            <img src="images/logo.svg" alt="logo">
+          </div>
+          <div class=" flex flex-row justify-around items-end space-x-3 px-6">
+            <a href="#" class=" hover:text-brightRed">
+              <img src="images/icon-facebook.svg" alt="" class="h-8 hover:text-brightRed" />
             </a>
             <!-- Link 2 -->
             <a href="#">
-              <img src="public/images/icon-youtube.svg" alt="" class="" />
+              <img src="images/icon-youtube.svg" alt="" class="h-8 hover:text-brightRed" />
             </a>
             <!-- Link 3 -->
             <a href="#">
-              <img src="public/images/icon-twitter.svg" alt="" class="" />
+              <img src="images/icon-twitter.svg" alt="" class="h-8 hover:text-brightRed" />
             </a>
             <!-- Link 4 -->
             <a href="#">
-              <img src="public/images/icon-pinterest.svg" alt="" class="" />
+              <img src="images/icon-pinterest.svg" alt="" class="h-8 hover:text-brightRed" />
             </a>
             <!-- Link 5 -->
             <a href="#">
-              <img src="public/images/icon-instagram.svg" alt="" class="" />
+              <img src="images/icon-instagram.svg" alt="" class="h-8 hover:text-brightRed" />
             </a>
           </div>
         </div>
-        <div>
-          <img src="public/images/logo.svg" alt="logo">
-        </div>
+
+        
+
       </footer>
     </main>
     <script src="app.js"></script>
